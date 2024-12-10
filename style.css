@@ -1,0 +1,41 @@
+/* Custom CSS */
+
+/* Hero Section */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Men haqimda rasmining zamonaviy ko'rinishi */
+#about .card img {
+    width: 100%; /* Rasmning kengligini konteynerga moslashtiradi */
+    height: 600px; /* Rasmning balandligini mutanosib qilib saqlaydi */
+    border-radius: 50%; /* Rasmni doira shaklida qilish */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* So'l yoki o'ngga tashlangan yumshoq soya */
+    transition: all 0.3s ease; /* Rasmni siqish va o'sishini yumshoq qilish */
+}
+
+#about .card img:hover {
+    transform: scale(1.05); /* Hover holatida rasmni biroz kattalashtirish */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Hover holatida soyani kuchaytirish */
+}
